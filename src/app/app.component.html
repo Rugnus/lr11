@@ -1,0 +1,130 @@
+<!-- <div class="container">
+  <h1>Hello bitch</h1>
+</div> -->
+
+
+
+
+<!-- Интерполяция -->
+<!-- <div class="container">
+  <h1>{{title}}</h1>
+  <h2>10 + 20 = {{ 10 + 20 }}</h2>
+  <h2>Число: {{myNumber}}</h2>
+  <h2> {{hello()}}</h2>
+  <h2> Флаг: {{ flag ? "включен" : "выключен" }}</h2>
+  <h2> {{title.toUpperCase()}}</h2>
+</div>
+<hr> -->
+
+
+
+
+<!-- Привязка свойств -->
+<!-- <div class="container">
+  <button class="btn" [disabled]="!buttonEnabled">Кнопка</button>
+</div>
+<hr> -->
+
+
+
+
+
+<!-- Привязка событий -->
+<!-- <div class="myblock" (mousemove) = "getCoords($event)"> -->
+  
+<!-- </div>
+<p>
+  X: {{blockx}}
+  Y: {{blocky}}
+
+</p>
+<hr> -->
+
+
+
+
+<!-- Привязка в оба направления -->
+<!-- <div class="container">
+  <input type="text" class="form-control" [(ngModel)]="inputValue">
+  <p>{{inputValue}}</p>
+</div>
+ -->
+<!-- <hr> -->
+
+
+
+
+
+
+<!-- Локальная референция -->
+<!-- viewchild -->
+<!-- <div class="container">
+  <input type="text" class="form-control" #someInput>
+  <button (click)="getData(someInput)">
+    Кнопка
+  </button>
+</div>
+<hr> -->
+
+
+
+
+
+<!-- Условный оператор -->
+<!-- <div class="container">
+  <p *ngIf="flag == true">Флаг включен</p>
+  <p *ngIf="flag == false">Флаг выключен</p>
+  <ng-container *ngIf="flag == true; else elseTemplate">
+    <p>Флаг включен</p>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <p>Флаг выключен</p>
+  </ng-template>
+</div>
+<hr> -->
+
+
+
+
+<!-- Циклы  -->
+<!-- <div class="container">
+  <div class="array" *ngFor="
+  let item of someArray; 
+  let item_index=index; 
+  let item_first = first
+  let item_last = last
+  ">
+    {{item_index + 1}}: {{item}}
+  </div>
+</div>
+<hr> -->
+
+
+
+
+<!-- Динамические стили и css классы в шаблонах -->
+<!-- <div class="container">
+  <p [style.font-size]="fontSize + 'px'">Какой-то текст</p>
+  <p [ngStyle]="{'font-size': fontSize + 'px'}" [ngClass]="{'color-green': buttonEnabled}">Ещё какой-то текст</p>
+</div> -->
+
+<div class="container" *ngFor="let item of dets.id">
+  
+  <div class="card" [ngClass]="{'green': dets.status }" class="red">
+    <h2>ID: {{dets.id}}</h2>
+    <h2>Name: {{dets.name}}</h2>
+    <h2>Status: {{dets.status ? "Включён" : "Выключен"}}</h2>
+
+  </div>
+
+  <!-- <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>  -->
+  
+</div>
